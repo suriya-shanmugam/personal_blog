@@ -1,0 +1,9 @@
+# Hugo build files
+/public/
+/resources/_gen/
+/hugo_stats.json
+
+# OS or editor-specific files
+.DS_Store
+*.log
+*.swp
