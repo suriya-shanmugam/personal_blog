@@ -20,7 +20,7 @@ db_get(){
 }
 ```
 
-> 📝 This is an example of a **log-structured** or **append-only** data file. Each time we write a new value, we simply append to the end.
+> This is an example of a **log-structured** or **append-only** data file. Each time we write a new value, we simply append to the end.
 
 ---
 
@@ -71,9 +71,8 @@ In real-world databases, indexes are much more sophisticated, but the principle 
 
 Indexes greatly improve **read performance**, but they come with costs:
 
-- ✅ **Faster reads** — because you avoid full scans.
-- ❌ **Slower writes** — because the index also needs to be updated every time you write data.
-- ❌ **Extra storage** — because indexes consume space.
+-  **Slower writes** — because the index also needs to be updated every time you write data.
+-  **Extra storage** — because indexes consume space.
 
 That’s why most databases don’t index everything by default. Instead, they let **you — the developer or DBA — decide** which columns to index based on query patterns.
 
