@@ -1,50 +1,37 @@
-# About Me
-Graduate student passionate about operating systems, computer networking, and distributed systems with a focus
-on building high-performance, scalable, and fault-tolerant systems. Hands-on experience in developing features for
-CRM platforms, contributing to seamless user experiences and platform optimization.
++++
+title = 'About Me'
+date = 2025-08-09T19:57:46-07:00
+draft = false
++++
 
-<style>
-td {
-  vertical-align: top;
-  font-size: 18px; /* Change this to your desired size */
-  line-height: 1.6;
-}
-h3 {
-  font-size: 20px;
-  margin-top: 0;
-}
-</style>
+##### Graduate student passionate about operating systems, computer networking, and distributed systems with a focus on building high-performance, scalable, and fault-tolerant systems. Hands-on experience in developing features for CRM platforms, contributing to seamless user experiences and platform optimization.
 
-<table>
-<tr>
-<td width="60%">
+{{< timeline >}}
 
-### Experience
+{{< timelineItem icon="graduation-cap" header="San Jose State University" badge="2024 - current" subheader="MS in Computer Software Engineering" >}}
+<ul>
+  <li>Developed an autonomous AI support agent that answers customer queries from help docs and monitors user emotions to flag poor experiences.
+Escalates to human agents when negative sentiment is detected.</li>
+  <li>Designed a private, distributed blockchain system to ensure the integrity of file access audits using a PoA-inspired consensus mechanism.</li>
+  <li>Developed a scalable social platform for networking and job search, utilizing
+a queue to handle notification burst scaling and a cache for optimizing
+database query performance.</li>
+  <li>Built a high-performance distributed document query engine with focus on
+scalability, fault tolerance, and low-latency response.</li>
+</ul> 
+{{< /timelineItem >}}
 
-**Member Technical Staff**  
-*Zoho Corporation*  
-_Aug 2018 – Jul 2024_  
-- Developed CRM & marketing platforms  
-- Mentored junior engineers  
-- Improved system architecture  
 
-**Project Intern**  
-*Zoho Corporation*  
-_Mar 2014 – Aug 2018_  
-- Contributed to backend systems  
-- Built internal tooling  
-- Fixed critical bugs  
 
-</td>
+{{< timelineItem icon="lock" header="Zoho Corporation" badge="2018 - 2024" subheader="Member Technical Staff" >}}
+<ul>
+  <li>Led the major CRM+ release by managing safe data migrations and feature rollouts to ensure a stable, user-friendly upgrade experience.</li>
+  <li>Delivered key CRM features end-to-end—Budget Board, Marketing Calendar, and GDPR tools—leading a 5-member team to serve 250K+ businesses.</li>
+  <li>Improved mobile experience by enabling deep linking from web to app views and standardizing APIs for smoother service integration.</li>
+  <li>Coordinated security efforts by enforcing security guidelines, triaging bug reports, and sharing RCAs to improve team-wide secure coding practices.</li>
+</ul> 
 
-<td width="40%">
 
-### Education
+{{< /timelineItem >}}
 
-**San Jose State University**  
-_M.S. in Computer Software Engineering_  
-2024 – 2026  
-
-</td>
-</tr>
-</table>
+{{< /timeline >}}
