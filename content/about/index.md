@@ -26,7 +26,7 @@ scalability, fault tolerance, and low-latency response.</li>
 {{< timelineItem icon="lock" header="Zoho Corporation" badge="2018 - 2024" subheader="Member Technical Staff" >}}
 <ul>
   <li>Led the major CRM+ release by managing safe data migrations and feature rollouts to ensure a stable, user-friendly upgrade experience.</li>
-  <li>Delivered key CRM features end-to-end—Budget Board, Marketing Calendar, and GDPR tools—leading a 5-member team to serve 250K+ businesses.</li>
+  <li>Directed end-to-end development of CRM features—Budget Board, Marketing Calendar, and GDPR tools—leading a 5-member team to serve 250K+ businesses.</li>
   <li>Improved mobile experience by enabling deep linking from web to app views and standardizing APIs for smoother service integration.</li>
   <li>Coordinated security efforts by enforcing security guidelines, triaging bug reports, and sharing RCAs to improve team-wide secure coding practices.</li>
 </ul> 
