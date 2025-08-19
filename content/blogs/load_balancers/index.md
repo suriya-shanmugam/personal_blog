@@ -132,7 +132,7 @@ This setup helps visualize how requests flow through a **real-world load balanci
 Load balancers may be invisible, but they are **critical for modern distributed systems**.  
 Choosing between **L4 vs L7** comes down to whether you need **performance (L4)** or **intelligence (L7)**.  
 
-The best architectures often combine both, with **L4 for raw speed** and **L7 for smart routing & app awareness**.
+The best architectures often combine both, with **L4 for raw speed** and **L7 for smart routing & app awareness**. 
 
 ---
 
