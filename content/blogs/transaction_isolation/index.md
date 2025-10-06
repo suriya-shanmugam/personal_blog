@@ -92,10 +92,6 @@ By using transactions, applications gain:
 
 These principles — known as **ACID properties** — form the foundation of reliable transactional systems.
 
-Perfect — let’s continue with the **ACID Properties** section, expanding each property with clear explanations, realistic examples, and results that demonstrate what happens in both success and failure cases.
-
-Here’s the full, clean markdown-style content ready for your blog:
-
 ---
 
 # ACID Properties in Transactions
@@ -252,25 +248,6 @@ If the server crashes right after, the database recovers using the log and repla
 
 ---
 
-Excellent — let’s write the **Isolation Level: READ COMMITTED** section following your structure:
-
-* Explanation
-* Implementation
-* Example
-* Unhandled cases
-
-I’ll preserve your technical intent but improve readability, clarity, and precision with SQL-style examples and clear outcomes.
-
----
-
-# I — Isolation
-
-**Definition:**
-Isolation ensures that concurrently running transactions do not interfere with each other.
-If one transaction performs multiple writes, another transaction should either see **all** or **none** of those writes — never a partial subset.
-
----
-
 # Isolation Level: READ COMMITTED
 
 ## Explanation
@@ -409,13 +386,6 @@ After both commits, **no one is on call** — a logical inconsistency known as *
 | Property           | Ensures                         | Fails To Prevent                               | Use Cases                                                               |
 | ------------------ | ------------------------------- | ---------------------------------------------- | ----------------------------------------------------------------------- |
 | **READ COMMITTED** | No dirty reads, No dirty writes | Non-repeatable reads, Lost updates, Write skew | Most OLTP systems where perfect consistency across reads isn’t required |
-
----
-# I — Isolation
-
-**Definition:**
-Isolation ensures that concurrently running transactions do not interfere with each other.
-If one transaction performs multiple writes, another transaction should either see **all** or **none** of those writes — never a partial subset.
 
 ---
 
