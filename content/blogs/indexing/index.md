@@ -1,6 +1,7 @@
 +++
 title = 'Intro to Indexing'
 draft = false
+date = 2025-08-06T22:19:54-07:00
 +++
 # Why Do We Need Indexing?
 
