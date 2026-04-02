@@ -203,6 +203,132 @@ Git melts commits C, D, and E down and creates a single, clean commit (F).
     "feat: add button"
 ```
 
+# Common use cases for rebasing
+
+## 1. Keep your feature branch up to date with `main`
+
+### Situation
+
+You started a feature branch a few days ago:
+
+```bash
+main:     A---B---C
+               \
+feature:        D---E
+```
+
+Meanwhile, `main` moved forward:
+
+```bash
+main:     A---B---C---F---G
+               \
+feature:        D---E
+```
+
+### What you do
+
+```bash
+git checkout feature
+git rebase main
+```
+
+### Result
+
+```bash
+main:     A---B---C---F---G
+                           \
+feature:                    D'---E'
+```
+
+### Why rebase here?
+
+* Keeps history **linear**
+* Avoids a messy merge commit
+* Makes it look like you started from the latest code
+
+Use this when:
+
+* You're working alone on the branch
+* You want clean history before merging
+
+---
+
+## 2. Clean up messy commits before merging (interactive rebase)
+
+### Situation
+
+Your commits look like this:
+
+```bash
+D - "fix"
+E - "oops"
+F - "final fix"
+```
+
+### What you do
+
+```bash
+git rebase -i main
+```
+
+Then squash:
+
+```
+pick D
+squash E
+squash F
+```
+
+### Result
+
+```bash
+D' - "Add login feature"
+```
+
+### Why rebase here?
+
+* Turns messy work into **clean, meaningful commits**
+* Makes code review easier
+
+Use this when:
+
+* You're about to open a PR
+* You want professional-looking history
+
+---
+
+### Why rebase here?
+
+* Keeps dependency chain intact
+* Avoids weird merge commits between features
+Use this when:
+
+* You have layered branches (very common in big features)
+
+---
+
+## 3. Before merging into `main` (linear history teams)
+
+Some teams prefer:
+
+* **Rebase + fast-forward merge**
+* No merge commits at all
+
+### Workflow
+
+```bash
+git checkout feature
+git rebase main
+git checkout main
+git merge feature  # fast-forward
+```
+
+### Result
+
+```bash
+main: A---B---C---D'---E'
+```
+
 ***
 
 Git is powerful, and with the right mental model—seeing it as a graph of snapshots governed by moving pointers—you can navigate any version control crisis with confidence.
