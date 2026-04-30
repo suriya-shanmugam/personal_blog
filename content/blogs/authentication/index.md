@@ -22,8 +22,6 @@ That order matters. Each topic is basically trying to fix a limitation of the pr
 
 # 1) Basic Authentication
 
-## Clear explanation
-
 Basic Authentication is the simplest possible idea:
 
 The client sends a username and password with the request.
@@ -130,8 +128,6 @@ A text encoding format. Not encryption.
 
 # 2) Digest Authentication
 
-## Clear explanation
-
 Digest Authentication tries to improve Basic Auth.
 
 Instead of sending the actual password, the client sends a **calculated response** based on:
@@ -226,8 +222,6 @@ A label for the protected area.
 ---
 
 # 3) API Keys
-
-## Clear explanation
 
 An API key is a secret string given to a client application, which the client sends to the server to identify itself.
 
@@ -328,8 +322,6 @@ Common places where the key is sent.
 ---
 
 # 4) Session-based Authentication
-
-## Clear explanation
 
 Session-based authentication is the classic web-app login model.
 
@@ -436,8 +428,6 @@ The server stores and remembers session state.
 ---
 
 # 5) Bearer Tokens and JWT
-
-## Clear explanation
 
 These two terms are related, but they are not the same.
 
@@ -568,8 +558,6 @@ When the token is no longer valid.
 
 # 6) Access Tokens and Refresh Tokens
 
-## Clear explanation
-
 This topic answers a very practical question:
 
 > Why not just issue one token and use it forever?
@@ -677,8 +665,6 @@ Replacing an old refresh token with a new one after use.
 ---
 
 # 7) OAuth 2.0
-
-## Clear explanation
 
 OAuth 2.0 is not mainly “login.”
 It is a framework for **delegated authorization**.
@@ -813,8 +799,6 @@ A protection added to modern authorization code flows.
 
 # 8) OpenID Connect
 
-## Clear explanation
-
 OpenID Connect, or OIDC, is the identity layer added on top of OAuth 2.0.
 
 OAuth answers:
@@ -934,8 +918,6 @@ Identity data such as subject, email, or name.
 ---
 
 # 9) Single Sign-On (SSO)
-
-## Clear explanation
 
 Single Sign-On means:
 
