@@ -4,13 +4,18 @@ date = 2025-08-09T19:57:46-07:00
 draft = false
 +++
 
+{{< button href="https://github.com/suriya-shanmugam" target="_blank" rel="noopener noreferrer" >}}
+{{< icon "github" >}} View GitHub Profile
+{{< /button >}}
+
+
 ## AI-Driven Kubernetes Observability Platform
  - Built an autonomous diagnostic system using LangGraph, Prometheus,
 Loki, Tempo, and Grafana MCP for cross-signal querying, enabling automated root-cause analysis and reducing MTTR
  - Engineered a multi-agent diagnosis pipeline with integrated tracing (Langfuse) and automated regression evaluation workflows (Weights and Biases), establishing reproducible performance benchmarks and improving agent-level observability. 
 
 <!-- {{< github repo="suriya-shanmugam/ioss" showThumbnail=false >}} -->
-{{< icon "github" >}} [Source Code](https://github.com/suriya-shanmugam/ioss)
+{{< icon "github" >}}  [Source Code](https://github.com/suriya-shanmugam/ioss)
 {{< keywordList >}}
 {{< keyword icon="code" >}} AI Agents {{< /keyword >}}
 {{< keyword icon="code" >}}  AWS EKS {{< /keyword >}}
